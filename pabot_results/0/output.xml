@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231027 17:28:51.725" rpa="true" schemaversion="4">
+<suite id="s1" name="Tasks" source="C:\Users\AW-Tester\Desktop\Att\Tasks">
+<suite id="s1-s1" name="Phone Chager" source="C:\Users\AW-Tester\Desktop\Att\Tasks\Phone Chager.robot">
+<test id="s1-s1-t1" name="loop" line="14">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1sec</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231027 17:28:52.448" endtime="20231027 17:28:52.448"/>
+</kw>
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231027 17:28:52.464" level="INFO">Opening browser 'Chrome' to base url 'https://www.allbestshopping.store/qualityphone.accessories?fbclid=IwAR2R-axzZ_YZb5jBR0qn1ZhcB2WeUd8-6pJsBBWaXx0NiNBV52Yxwd-xnCo'.</msg>
+<msg timestamp="20231027 17:28:53.532" level="WARN">The chromedriver version (117.0.5938.62) detected in PATH at C:\Users\AW-Tester\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.118); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20231027 17:28:52.464" endtime="20231027 17:28:57.029"/>
+</kw>
+<status status="PASS" starttime="20231027 17:28:52.464" endtime="20231027 17:28:57.029"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>390</arg>
+<arg>844</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20231027 17:28:57.030" endtime="20231027 17:28:59.392"/>
+</kw>
+<while condition="True">
+<iter>
+<kw name="Name" library="FakerLibrary">
+<var>${name}</var>
+<doc>:example: 'John Doe'</doc>
+<msg timestamp="20231027 17:28:59.393" level="INFO">${name} = Angela Campbell</msg>
+<status status="PASS" starttime="20231027 17:28:59.392" endtime="20231027 17:28:59.393"/>
+</kw>
+<kw name="Phone Number" library="FakerLibrary">
+<var>${phone}</var>
+<msg timestamp="20231027 17:28:59.393" level="INFO">${phone} = 848-953-8091</msg>
+<status status="PASS" starttime="20231027 17:28:59.393" endtime="20231027 17:28:59.393"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${address}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<msg timestamp="20231027 17:28:59.394" level="INFO">${address} = 5776 Mathew Port
+Jenniferview, MA 84056</msg>
+<status status="PASS" starttime="20231027 17:28:59.394" endtime="20231027 17:28:59.394"/>
+</kw>
+<kw name="Fill_in">
+<arg>(//input[@placeholder='ឈ្មោះ​ពេញ​របស់​អ្នក'])[2]</arg>
+<arg>(//input[@placeholder='លេខទូរស័ព្ទ (EX: 855...)'])[2]</arg>
+<arg>(//input[@placeholder='អាស័យដ្ឋាន (ឧ៖ ណយ សុខ ភ្នំពេញ ៨៥៥ ខេមភូជៀ។)'])[2]</arg>
+<arg>${name}</arg>
+<arg>${phone}</arg>
+<arg>${address}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231027 17:29:00.395" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231027 17:28:59.395" endtime="20231027 17:29:00.395"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_name}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:00.396" level="INFO">Typing text 'Angela Campbell' into text field '(//input[@placeholder='ឈ្មោះ​ពេញ​របស់​អ្នក'])[2]'.</msg>
+<status status="PASS" starttime="20231027 17:29:00.396" endtime="20231027 17:29:03.522"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:03.522" level="INFO">Typing text '848-953-8091' into text field '(//input[@placeholder='លេខទូរស័ព្ទ (EX: 855...)'])[2]'.</msg>
+<status status="PASS" starttime="20231027 17:29:03.522" endtime="20231027 17:29:06.654"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_address}</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:06.654" level="INFO">Typing text '5776 Mathew Port
+Jenniferview, MA 84056' into text field '(//input[@placeholder='អាស័យដ្ឋាន (ឧ៖ ណយ សុខ ភ្នំពេញ ៨៥៥ ខេមភូជៀ។)'])[2]'.</msg>
+<status status="PASS" starttime="20231027 17:29:06.654" endtime="20231027 17:29:09.837"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231027 17:29:12.838" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231027 17:29:09.837" endtime="20231027 17:29:12.838"/>
+</kw>
+<status status="PASS" starttime="20231027 17:28:59.394" endtime="20231027 17:29:12.838"/>
+</kw>
+<kw name="check">
+<arg>(//input[contains(@name,'form_item72')])[3]</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${check}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:12.838" level="INFO">Clicking element '(//input[contains(@name,'form_item72')])[3]'.</msg>
+<status status="PASS" starttime="20231027 17:29:12.838" endtime="20231027 17:29:14.926"/>
+</kw>
+<status status="PASS" starttime="20231027 17:29:12.838" endtime="20231027 17:29:14.926"/>
+</kw>
+<kw name="check">
+<arg>(//input[contains(@name,'form_item72')])[4]</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${check}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:14.926" level="INFO">Clicking element '(//input[contains(@name,'form_item72')])[4]'.</msg>
+<status status="PASS" starttime="20231027 17:29:14.926" endtime="20231027 17:29:17.073"/>
+</kw>
+<status status="PASS" starttime="20231027 17:29:14.926" endtime="20231027 17:29:17.073"/>
+</kw>
+<kw name="submit">
+<arg>(//p[contains(@class,'ladi-headline ladi-transition')][contains(text(),'ទិញ​ឥឡូវនេះ')])[2]</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:17.074" level="INFO">Clicking element '(//p[contains(@class,'ladi-headline ladi-transition')][contains(text(),'ទិញ​ឥឡូវនេះ')])[2]'.</msg>
+<status status="PASS" starttime="20231027 17:29:17.073" endtime="20231027 17:29:19.192"/>
+</kw>
+<status status="PASS" starttime="20231027 17:29:17.073" endtime="20231027 17:29:19.192"/>
+</kw>
+<kw name="Verify">
+<arg>(//span[normalize-space()='Alert'])[1]</arg>
+<arg>Alert</arg>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>${result_value}</arg>
+<arg>${compare_value}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20231027 17:29:19.193" endtime="20231027 17:29:21.241"/>
+</kw>
+<status status="PASS" starttime="20231027 17:29:19.192" endtime="20231027 17:29:21.241"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20231027 17:29:21.242" endtime="20231027 17:29:22.543"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231027 17:29:25.544" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231027 17:29:22.543" endtime="20231027 17:29:25.544"/>
+</kw>
+<status status="PASS" starttime="20231027 17:28:59.392" endtime="20231027 17:29:25.544"/>
+</iter>
+<iter>
+<kw name="Name" library="FakerLibrary">
+<var>${name}</var>
+<doc>:example: 'John Doe'</doc>
+<msg timestamp="20231027 17:29:25.544" level="INFO">${name} = Dr. Erin Chambers</msg>
+<status status="PASS" starttime="20231027 17:29:25.544" endtime="20231027 17:29:25.544"/>
+</kw>
+<kw name="Phone Number" library="FakerLibrary">
+<var>${phone}</var>
+<msg timestamp="20231027 17:29:25.544" level="INFO">${phone} = +1-499-990-0845</msg>
+<status status="PASS" starttime="20231027 17:29:25.544" endtime="20231027 17:29:25.544"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${address}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<msg timestamp="20231027 17:29:25.544" level="INFO">${address} = 80235 Ferguson Drive Apt. 547
+Gatestown, NV 81382</msg>
+<status status="PASS" starttime="20231027 17:29:25.544" endtime="20231027 17:29:25.544"/>
+</kw>
+<kw name="Fill_in">
+<arg>(//input[@placeholder='ឈ្មោះ​ពេញ​របស់​អ្នក'])[2]</arg>
+<arg>(//input[@placeholder='លេខទូរស័ព្ទ (EX: 855...)'])[2]</arg>
+<arg>(//input[@placeholder='អាស័យដ្ឋាន (ឧ៖ ណយ សុខ ភ្នំពេញ ៨៥៥ ខេមភូជៀ។)'])[2]</arg>
+<arg>${name}</arg>
+<arg>${phone}</arg>
+<arg>${address}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231027 17:29:26.544" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231027 17:29:25.544" endtime="20231027 17:29:26.544"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_name}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:26.544" level="INFO">Typing text 'Dr. Erin Chambers' into text field '(//input[@placeholder='ឈ្មោះ​ពេញ​របស់​អ្នក'])[2]'.</msg>
+<status status="PASS" starttime="20231027 17:29:26.544" endtime="20231027 17:29:29.732"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:29.733" level="INFO">Typing text '+1-499-990-0845' into text field '(//input[@placeholder='លេខទូរស័ព្ទ (EX: 855...)'])[2]'.</msg>
+<status status="PASS" starttime="20231027 17:29:29.732" endtime="20231027 17:29:32.890"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_address}</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231027 17:29:32.890" level="INFO">Typing text '80235 Ferguson Drive Apt. 547
+Gatestown, NV 81382' into text field '(//input[@placeholder='អាស័យដ្ឋាន (ឧ៖ ណយ សុខ ភ្នំពេញ ៨៥៥ ខេមភូជៀ។)'])[2]'.</msg>
+<msg timestamp="20231027 17:29:33.901" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67ED77862+54818]
+	(No symbol) [0x00007FF67ECE6A92]
+	(No symbol) [0x00007FF67EB9DA3B]
+	(No symbol) [0x00007FF67EB7DEE8]
+	(No symbol) [0x00007FF67EC03237]
+	(No symbol) [0x00007FF67EC16C6F]
+	(No symbol) [0x00007FF67EBFE883]
+	(No symbol) [0x00007FF67EBD3691]
+	(No symbol) [0x00007FF67EBD48D4]
+	GetHandleVerifier [0x00007FF67F0DB962+3610402]
+	GetHandleVerifier [0x00007FF67F131830+3962352]
+	GetHandleVerifier [0x00007FF67F129D1F+3930847]
+	GetHandleVerifier [0x00007FF67EE13616+693206]
+	(No symbol) [0x00007FF67ECF15F8]
+	(No symbol) [0x00007FF67ECED904]
+	(No symbol) [0x00007FF67ECEDA32]
+	(No symbol) [0x00007FF67ECDE0E3]
+	BaseThreadInitThunk [0x00007FFA39377344+20]
+	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
+</msg>
+<msg timestamp="20231027 17:29:33.901" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67ED77862+54818]
+	(No symbol) [0x00007FF67ECE6A92]
+	(No symbol) [0x00007FF67EB9DA3B]
+	(No symbol) [0x00007FF67EB7DEE8]
+	(No symbol) [0x00007FF67EC03237]
+	(No symbol) [0x00007FF67EC16C6F]
+	(No symbol) [0x00007FF67EBFE883]
+	(No symbol) [0x00007FF67EBD3691]
+	(No symbol) [0x00007FF67EBD48D4]
+	GetHandleVerifier [0x00007FF67F0DB962+3610402]
+	GetHandleVerifier [0x00007FF67F131830+3962352]
+	GetHandleVerifier [0x00007FF67F129D1F+3930847]
+	GetHandleVerifier [0x00007FF67EE13616+693206]
+	(No symbol) [0x00007FF67ECF15F8]
+	(No symbol) [0x00007FF67ECED904]
+	(No symbol) [0x00007FF67ECEDA32]
+	(No symbol) [0x00007FF67ECDE0E3]
+	BaseThreadInitThunk [0x00007FFA39377344+20]
+	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
+</msg>
+<status status="FAIL" starttime="20231027 17:29:32.890" endtime="20231027 17:29:33.911"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231027 17:29:33.914" endtime="20231027 17:29:33.914"/>
+</kw>
+<status status="FAIL" starttime="20231027 17:29:25.544" endtime="20231027 17:29:33.914"/>
+</kw>
+<kw name="check">
+<arg>(//input[contains(@name,'form_item72')])[3]</arg>
+<status status="NOT RUN" starttime="20231027 17:29:33.914" endtime="20231027 17:29:33.914"/>
+</kw>
+<kw name="check">
+<arg>(//input[contains(@name,'form_item72')])[4]</arg>
+<status status="NOT RUN" starttime="20231027 17:29:33.914" endtime="20231027 17:29:33.914"/>
+</kw>
+<kw name="submit">
+<arg>(//p[contains(@class,'ladi-headline ladi-transition')][contains(text(),'ទិញ​ឥឡូវនេះ')])[2]</arg>
+<status status="NOT RUN" starttime="20231027 17:29:33.914" endtime="20231027 17:29:33.914"/>
+</kw>
+<kw name="Verify">
+<arg>(//span[normalize-space()='Alert'])[1]</arg>
+<arg>Alert</arg>
+<status status="NOT RUN" starttime="20231027 17:29:33.914" endtime="20231027 17:29:33.914"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" starttime="20231027 17:29:33.914" endtime="20231027 17:29:33.914"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231027 17:29:33.914" endtime="20231027 17:29:33.914"/>
+</kw>
+<status status="FAIL" starttime="20231027 17:29:25.544" endtime="20231027 17:29:33.914"/>
+</iter>
+<status status="FAIL" starttime="20231027 17:28:59.392" endtime="20231027 17:29:33.914"/>
+</while>
+<status status="FAIL" starttime="20231027 17:28:52.448" endtime="20231027 17:29:33.914">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67ED77862+54818]
+	(No symbol) [0x00007FF67ECE6A92]
+	(No symbol) [0x00007FF67EB9DA3B]
+	(No symbol) [0x00007FF67EB7DEE8]
+	(No symbol) [0x00007FF67EC03237]
+	(No symbol) [0x00007FF67EC16C6F]
+	(No symbol) [0x00007FF67EBFE883]
+	(No symbol) [0x00007FF67EBD3691]
+	(No symbol) [0x00007FF67EBD48D4]
+	GetHandleVerifier [0x00007FF67F0DB962+3610402]
+	GetHandleVerifier [0x00007FF67F131830+3962352]
+	GetHandleVerifier [0x00007FF67F129D1F+3930847]
+	GetHandleVerifier [0x00007FF67EE13616+693206]
+	(No symbol) [0x00007FF67ECF15F8]
+	(No symbol) [0x00007FF67ECED904]
+	(No symbol) [0x00007FF67ECEDA32]
+	(No symbol) [0x00007FF67ECDE0E3]
+	BaseThreadInitThunk [0x00007FFA39377344+20]
+	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
+</status>
+</test>
+<doc>Phone Charger</doc>
+<status status="FAIL" starttime="20231027 17:28:51.760" endtime="20231027 17:29:33.914"/>
+</suite>
+<status status="FAIL" starttime="20231027 17:28:51.745" endtime="20231027 17:29:33.914"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Phone Chager">Tasks.Phone Chager</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231027 17:28:53.532" level="WARN">The chromedriver version (117.0.5938.62) detected in PATH at C:\Users\AW-Tester\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.118); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20231027 17:29:33.901" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67ED77862+54818]
+	(No symbol) [0x00007FF67ECE6A92]
+	(No symbol) [0x00007FF67EB9DA3B]
+	(No symbol) [0x00007FF67EB7DEE8]
+	(No symbol) [0x00007FF67EC03237]
+	(No symbol) [0x00007FF67EC16C6F]
+	(No symbol) [0x00007FF67EBFE883]
+	(No symbol) [0x00007FF67EBD3691]
+	(No symbol) [0x00007FF67EBD48D4]
+	GetHandleVerifier [0x00007FF67F0DB962+3610402]
+	GetHandleVerifier [0x00007FF67F131830+3962352]
+	GetHandleVerifier [0x00007FF67F129D1F+3930847]
+	GetHandleVerifier [0x00007FF67EE13616+693206]
+	(No symbol) [0x00007FF67ECF15F8]
+	(No symbol) [0x00007FF67ECED904]
+	(No symbol) [0x00007FF67ECEDA32]
+	(No symbol) [0x00007FF67ECDE0E3]
+	BaseThreadInitThunk [0x00007FFA39377344+20]
+	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
+</msg>
+<msg timestamp="20231027 17:29:33.914" level="ERROR">Calling method 'end_keyword' of listener 'RobotStackTracer' failed: UnicodeEncodeError: 'charmap' codec can't encode characters in position 728-746: character maps to &lt;undefined&gt;</msg>
+</errors>
+</robot>

@@ -1,0 +1,25 @@
+[ WARN ] The chromedriver version (117.0.5938.62) detected in PATH at C:\Users\AW-Tester\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.118); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67ED77862+54818]
+	(No symbol) [0x00007FF67ECE6A92]
+	(No symbol) [0x00007FF67EB9DA3B]
+	(No symbol) [0x00007FF67EB7DEE8]
+	(No symbol) [0x00007FF67EC03237]
+	(No symbol) [0x00007FF67EC16C6F]
+	(No symbol) [0x00007FF67EBFE883]
+	(No symbol) [0x00007FF67EBD3691]
+	(No symbol) [0x00007FF67EBD48D4]
+	GetHandleVerifier [0x00007FF67F0DB962+3610402]
+	GetHandleVerifier [0x00007FF67F131830+3962352]
+	GetHandleVerifier [0x00007FF67F129D1F+3930847]
+	GetHandleVerifier [0x00007FF67EE13616+693206]
+	(No symbol) [0x00007FF67ECF15F8]
+	(No symbol) [0x00007FF67ECED904]
+	(No symbol) [0x00007FF67ECEDA32]
+	(No symbol) [0x00007FF67ECDE0E3]
+	BaseThreadInitThunk [0x00007FFA39377344+20]
+	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
+

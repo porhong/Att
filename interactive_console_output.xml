@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231027 14:41:11.729" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\AW-Tester\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Browser To Login Page">
+<msg timestamp="20231027 14:41:12.473" level="FAIL">No keyword with name 'Open Browser To Login Page' found.</msg>
+<status status="FAIL" starttime="20231027 14:41:12.472" endtime="20231027 14:41:12.473"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20231027 14:41:12.474" endtime="20231027 14:41:12.474"/>
+</kw>
+<while condition="True">
+<iter>
+<kw name="Fill_in">
+<arg>(//input[@placeholder='ឈ្មោះ​ពេញ​របស់​អ្នក'])[2]</arg>
+<arg>(//input[@placeholder='លេខទូរស័ព្ទ (EX: 855...)'])[2]</arg>
+<arg>(//input[@placeholder='អាស័យដ្ឋាន (ឧ៖ ណយ សុខ ភ្នំពេញ ៨៥៥ ខេមភូជៀ។)'])[2]</arg>
+<arg>(//input[contains(@name,'form_item72')])[3]</arg>
+<arg>(//p[contains(@class,'ladi-headline ladi-transition')][contains(text(),'ទិញ​ឥឡូវនេះ')])[2]</arg>
+<arg>111</arg>
+<arg>111</arg>
+<arg>111</arg>
+<status status="NOT RUN" starttime="20231027 14:41:12.475" endtime="20231027 14:41:12.475"/>
+</kw>
+<status status="NOT RUN" starttime="20231027 14:41:12.474" endtime="20231027 14:41:12.475"/>
+</iter>
+<status status="NOT RUN" starttime="20231027 14:41:12.474" endtime="20231027 14:41:12.475"/>
+</while>
+<status status="PASS" starttime="20231027 14:41:11.799" endtime="20231027 14:41:13.699"/>
+</kw>
+<status status="PASS" starttime="20231027 14:41:11.798" endtime="20231027 14:41:13.699"/>
+</test>
+<status status="PASS" starttime="20231027 14:41:11.737" endtime="20231027 14:41:13.700"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

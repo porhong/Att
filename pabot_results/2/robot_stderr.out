@@ -1,0 +1,3 @@
+[ WARN ] The chromedriver version (117.0.5938.62) detected in PATH at C:\Users\AW-Tester\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.118); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry
+[ ERROR ] Calling method 'end_keyword' of listener 'RobotStackTracer' failed: UnicodeEncodeError: 'charmap' codec can't encode characters in position 695-715: character maps to <undefined>
+[ ERROR ] Calling method 'end_keyword' of listener 'RobotStackTracer' failed: UnicodeEncodeError: 'charmap' codec can't encode characters in position 695-715: character maps to <undefined>
