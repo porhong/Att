@@ -1,39 +1,30 @@
 ==============================================================================
-Tasks                                                                         
+Rolex                                                                         
 ==============================================================================
-Tasks.Milano :: Phone Charger                                                 
+Rolex.Rolex copy 2 :: Phone Charger                                           
 ==============================================================================
-loop                                                                  | FAIL |
-ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=118.0.5993.118)
-Stacktrace:
-	GetHandleVerifier [0x00007FF67ED77862+54818]
-	(No symbol) [0x00007FF67ECE6A92]
-	(No symbol) [0x00007FF67EB9D8ED]
-	(No symbol) [0x00007FF67EBDF8E5]
-	(No symbol) [0x00007FF67EBD571F]
-	(No symbol) [0x00007FF67EBFEAAA]
-	(No symbol) [0x00007FF67EBD5036]
-	(No symbol) [0x00007FF67EBFECC0]
-	(No symbol) [0x00007FF67EC175A2]
-	(No symbol) [0x00007FF67EBFE883]
-	(No symbol) [0x00007FF67EBD3691]
-	(No symbol) [0x00007FF67EBD48D4]
-	GetHandleVerifier [0x00007FF67F0DB962+3610402]
-	GetHandleVerifier [0x00007FF67F131830+3962352]
-	GetHandleVerifier [0x00007FF67F129D1F+3930847]
-	GetHandleVerifier [0x00007FF67EE13616+693206]
-	(No symbol) [0x00007FF67ECF15F8]
-	(No symbol) [0x00007FF67ECED904]
-	(No symbol) [0x00007FF67ECEDA32]
-	(No symbol) [0x00007FF67ECDE0E3]
-	BaseThreadInitThunk [0x00007FFA39377344+20]
-	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
+loop                                                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Porhong\Desktop\Attc\Att\Rolex\Rolex copy 2.robot:14
+    T:  loop    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Porhong\Desktop\Attc\Att\Rolex\Rolex copy 2.robot:18
+      True    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Porhong\Desktop\Attc\Att\Rolex\Rolex copy 2.robot:18
+          
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Porhong\Desktop\Attc\Att\Rolex\Rolex copy 2.robot:34
+      Wait Until Element Is Visible    (//h3[contains(text(),'Thank you')])[1]
+______________________________________________________________________________
+| FAIL |
+Element '(//h3[contains(text(),'Thank you')])[1]' not visible after 5 seconds.
 ------------------------------------------------------------------------------
-Tasks.Milano :: Phone Charger                                         | FAIL |
+Rolex.Rolex copy 2 :: Phone Charger                                   | FAIL |
 1 task, 0 passed, 1 failed
 ==============================================================================
-Tasks                                                                 | FAIL |
+Rolex                                                                 | FAIL |
 1 task, 0 passed, 1 failed
 ==============================================================================
-Output:  C:\Users\AW-Tester\Desktop\Att\pabot_results\2\output.xml
+Output:  C:\Users\Porhong\Desktop\Attc\Att\pabot_results\2\output.xml

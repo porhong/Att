@@ -1,7 +1,14 @@
-datasources:4fc374ea968dfa366d84ef822e3e40307003ee2a
+datasources:3603ff47e48846ad8eff9566d409690128716091
 commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
 suitesfrom:no-suites-from-option
-file:77297d746a647cde042c6201ec6748f985fe50c4
---test Tasks.Phone Chager.loop
---test Tasks.Rolex.loop
---test Tasks.Milano.loop
+file:d68b8cfcca5f92ed8a5230504bb1ca62850f579e
+--test Rolex.Rolex.loop
+--test Rolex.Rolex copy.loop
+--test Rolex.Rolex copy 2.loop
+--test Rolex.Rolex copy 3.loop
+--test Rolex.Rolex copy 4.loop
+--test Rolex.Rolex copy 5.loop
+--test Rolex.Rolex copy 6.loop
+--test Rolex.Rolex copy 7.loop
+--test Rolex.Rolex copy 8.loop
+--test Rolex.Rolex copy 9.loop

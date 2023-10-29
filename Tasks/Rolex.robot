@@ -12,7 +12,7 @@ ${BROWSER}      Chrome
 
 *** Tasks ***
 loop
-    Set Selenium Speed    1sec
+    Set Selenium Speed    0.3sec
     Open Browser To Login Page
     # Set Window Size    390    844
     WHILE    True

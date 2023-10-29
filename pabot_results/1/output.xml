@@ -1,70 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231027 17:28:51.725" rpa="true" schemaversion="4">
-<suite id="s1" name="Tasks" source="C:\Users\AW-Tester\Desktop\Att\Tasks">
-<suite id="s1-s1" name="Rolex" source="C:\Users\AW-Tester\Desktop\Att\Tasks\Rolex.robot">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231028 01:08:23.743" rpa="true" schemaversion="4">
+<suite id="s1" name="Rolex" source="C:\Users\Porhong\Desktop\Attc\Att\Rolex">
+<suite id="s1-s1" name="Rolex copy" source="C:\Users\Porhong\Desktop\Attc\Att\Rolex\Rolex copy.robot">
 <test id="s1-s1-t1" name="loop" line="14">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>1sec</arg>
+<arg>0.3sec</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231027 17:28:52.448" endtime="20231027 17:28:52.448"/>
+<status status="PASS" starttime="20231028 01:08:25.092" endtime="20231028 01:08:25.092"/>
 </kw>
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231027 17:28:52.448" level="INFO">Opening browser 'Chrome' to base url 'https://www.rolexoffice.asia/rolex-datejust-yellow-gold-diamonds?fbclid=IwAR1BuIXDKEf24Z7_ZPyX-ol4g2rRBUrf88QsNCfP687wiAdf628qoIF_l0U&amp;utm_campaign=po8%20-%20rolex%20yellow%20gold%20-%201%20-%20cam'.</msg>
-<msg timestamp="20231027 17:28:53.532" level="WARN">The chromedriver version (117.0.5938.62) detected in PATH at C:\Users\AW-Tester\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.118); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
-<status status="PASS" starttime="20231027 17:28:52.448" endtime="20231027 17:28:59.981"/>
+<msg timestamp="20231028 01:08:25.092" level="INFO">Opening browser 'Chrome' to base url 'https://www.rolexoffice.asia/rolex-datejust-yellow-gold-diamonds?fbclid=IwAR1BuIXDKEf24Z7_ZPyX-ol4g2rRBUrf88QsNCfP687wiAdf628qoIF_l0U&amp;utm_campaign=po8%20-%20rolex%20yellow%20gold%20-%201%20-%20cam'.</msg>
+<status status="PASS" starttime="20231028 01:08:25.092" endtime="20231028 01:08:39.801"/>
 </kw>
-<status status="PASS" starttime="20231027 17:28:52.448" endtime="20231027 17:28:59.981"/>
+<status status="PASS" starttime="20231028 01:08:25.092" endtime="20231028 01:08:39.801"/>
 </kw>
 <while condition="True">
 <iter>
 <kw name="Country" library="FakerLibrary">
 <var>${country}</var>
-<msg timestamp="20231027 17:28:59.984" level="INFO">${country} = Gibraltar</msg>
-<status status="PASS" starttime="20231027 17:28:59.983" endtime="20231027 17:28:59.984"/>
+<msg timestamp="20231028 01:08:39.803" level="INFO">${country} = Heard Island and McDonald Islands</msg>
+<status status="PASS" starttime="20231028 01:08:39.802" endtime="20231028 01:08:39.804"/>
 </kw>
 <kw name="Name" library="FakerLibrary">
 <var>${name}</var>
 <doc>:example: 'John Doe'</doc>
-<msg timestamp="20231027 17:28:59.986" level="INFO">${name} = Kimberly Beasley</msg>
-<status status="PASS" starttime="20231027 17:28:59.984" endtime="20231027 17:28:59.986"/>
+<msg timestamp="20231028 01:08:39.806" level="INFO">${name} = Yvonne Arnold</msg>
+<status status="PASS" starttime="20231028 01:08:39.804" endtime="20231028 01:08:39.806"/>
 </kw>
 <kw name="Phone Number" library="FakerLibrary">
 <var>${phone}</var>
-<msg timestamp="20231027 17:28:59.987" level="INFO">${phone} = 001-625-634-5461x749</msg>
-<status status="PASS" starttime="20231027 17:28:59.986" endtime="20231027 17:28:59.987"/>
+<msg timestamp="20231028 01:08:39.807" level="INFO">${phone} = 901-565-7070x13509</msg>
+<status status="PASS" starttime="20231028 01:08:39.806" endtime="20231028 01:08:39.807"/>
 </kw>
 <kw name="Address" library="FakerLibrary">
 <var>${address}</var>
 <doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
-<msg timestamp="20231027 17:28:59.989" level="INFO">${address} = 6636 Fritz Island Suite 554
-Candicestad, WA 84102</msg>
-<status status="PASS" starttime="20231027 17:28:59.987" endtime="20231027 17:28:59.989"/>
+<msg timestamp="20231028 01:08:39.808" level="INFO">${address} = 234 Thomas Grove
+Mercerport, CT 64801</msg>
+<status status="PASS" starttime="20231028 01:08:39.807" endtime="20231028 01:08:39.808"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1sec</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231027 17:29:00.992" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231027 17:28:59.989" endtime="20231027 17:29:00.992"/>
+<msg timestamp="20231028 01:08:40.810" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231028 01:08:39.808" endtime="20231028 01:08:40.810"/>
 </kw>
 <kw name="check">
 <arg>(//p[@class='ladi-headline'][contains(text(),'ទិញ​ឥឡូវនេះ')])[1]</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${check}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:00.992" level="INFO">Clicking element '(//p[@class='ladi-headline'][contains(text(),'ទិញ​ឥឡូវនេះ')])[1]'.</msg>
-<status status="PASS" starttime="20231027 17:29:00.992" endtime="20231027 17:29:03.085"/>
+<msg timestamp="20231028 01:08:40.816" level="INFO">Clicking element '(//p[@class='ladi-headline'][contains(text(),'ទិញ​ឥឡូវនេះ')])[1]'.</msg>
+<status status="PASS" starttime="20231028 01:08:40.810" endtime="20231028 01:08:41.579"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:00.992" endtime="20231027 17:29:03.085"/>
+<status status="PASS" starttime="20231028 01:08:40.810" endtime="20231028 01:08:41.580"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1sec</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231027 17:29:04.085" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231027 17:29:03.085" endtime="20231027 17:29:04.085"/>
+<msg timestamp="20231028 01:08:42.582" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231028 01:08:41.582" endtime="20231028 01:08:42.582"/>
 </kw>
 <kw name="Fill_in">
 <arg>(//input[@placeholder='ប្រទេស​របស់​អ្នក'])[1]</arg>
@@ -73,10 +72,10 @@ Candicestad, WA 84102</msg>
 <arg>${txt_value}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:04.085" level="INFO">Typing text 'Gibraltar' into text field '(//input[@placeholder='ប្រទេស​របស់​អ្នក'])[1]'.</msg>
-<status status="PASS" starttime="20231027 17:29:04.085" endtime="20231027 17:29:07.271"/>
+<msg timestamp="20231028 01:08:42.584" level="INFO">Typing text 'Heard Island and McDonald Islands' into text field '(//input[@placeholder='ប្រទេស​របស់​អ្នក'])[1]'.</msg>
+<status status="PASS" starttime="20231028 01:08:42.584" endtime="20231028 01:08:43.751"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:04.085" endtime="20231027 17:29:07.271"/>
+<status status="PASS" starttime="20231028 01:08:42.583" endtime="20231028 01:08:43.751"/>
 </kw>
 <kw name="Fill_in">
 <arg>(//input[@placeholder='នាមត្រកូល​និង​ឈ្មោះ'])[1]</arg>
@@ -85,10 +84,10 @@ Candicestad, WA 84102</msg>
 <arg>${txt_value}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:07.271" level="INFO">Typing text 'Kimberly Beasley' into text field '(//input[@placeholder='នាមត្រកូល​និង​ឈ្មោះ'])[1]'.</msg>
-<status status="PASS" starttime="20231027 17:29:07.271" endtime="20231027 17:29:10.479"/>
+<msg timestamp="20231028 01:08:43.755" level="INFO">Typing text 'Yvonne Arnold' into text field '(//input[@placeholder='នាមត្រកូល​និង​ឈ្មោះ'])[1]'.</msg>
+<status status="PASS" starttime="20231028 01:08:43.754" endtime="20231028 01:08:44.869"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:07.271" endtime="20231027 17:29:10.479"/>
+<status status="PASS" starttime="20231028 01:08:43.751" endtime="20231028 01:08:44.869"/>
 </kw>
 <kw name="Fill_in">
 <arg>(//input[@placeholder='លេខទូរសព្ទ'])[1]</arg>
@@ -97,10 +96,10 @@ Candicestad, WA 84102</msg>
 <arg>${txt_value}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:10.481" level="INFO">Typing text '001-625-634-5461x749' into text field '(//input[@placeholder='លេខទូរសព្ទ'])[1]'.</msg>
-<status status="PASS" starttime="20231027 17:29:10.480" endtime="20231027 17:29:13.645"/>
+<msg timestamp="20231028 01:08:44.871" level="INFO">Typing text '901-565-7070x13509' into text field '(//input[@placeholder='លេខទូរសព្ទ'])[1]'.</msg>
+<status status="PASS" starttime="20231028 01:08:44.870" endtime="20231028 01:08:46.014"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:10.479" endtime="20231027 17:29:13.645"/>
+<status status="PASS" starttime="20231028 01:08:44.869" endtime="20231028 01:08:46.016"/>
 </kw>
 <kw name="Fill_in">
 <arg>(//input[@placeholder='អាស័យដ្ឋាន'])[1]</arg>
@@ -109,155 +108,84 @@ Candicestad, WA 84102</msg>
 <arg>${txt_value}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:13.645" level="INFO">Typing text '6636 Fritz Island Suite 554
-Candicestad, WA 84102' into text field '(//input[@placeholder='អាស័យដ្ឋាន'])[1]'.</msg>
-<status status="PASS" starttime="20231027 17:29:13.645" endtime="20231027 17:29:16.929"/>
+<msg timestamp="20231028 01:08:46.021" level="INFO">Typing text '234 Thomas Grove
+Mercerport, CT 64801' into text field '(//input[@placeholder='អាស័យដ្ឋាន'])[1]'.</msg>
+<status status="PASS" starttime="20231028 01:08:46.019" endtime="20231028 01:08:47.222"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:13.645" endtime="20231027 17:29:16.929"/>
+<status status="PASS" starttime="20231028 01:08:46.017" endtime="20231028 01:08:47.222"/>
 </kw>
 <kw name="check">
 <arg>(//input[@value='ទិញ 1 តម្លៃ $69 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${check}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:16.929" level="INFO">Clicking element '(//input[@value='ទិញ 1 តម្លៃ $69 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]'.</msg>
-<status status="PASS" starttime="20231027 17:29:16.929" endtime="20231027 17:29:18.987"/>
+<msg timestamp="20231028 01:08:47.227" level="INFO">Clicking element '(//input[@value='ទិញ 1 តម្លៃ $69 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]'.</msg>
+<status status="PASS" starttime="20231028 01:08:47.223" endtime="20231028 01:08:47.914"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:16.929" endtime="20231027 17:29:18.987"/>
+<status status="PASS" starttime="20231028 01:08:47.222" endtime="20231028 01:08:47.914"/>
 </kw>
 <kw name="check">
 <arg>(//input[@value='ទិញ 2 តំលៃ $99 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${check}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:18.987" level="INFO">Clicking element '(//input[@value='ទិញ 2 តំលៃ $99 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]'.</msg>
-<status status="PASS" starttime="20231027 17:29:18.987" endtime="20231027 17:29:21.063"/>
+<msg timestamp="20231028 01:08:47.920" level="INFO">Clicking element '(//input[@value='ទិញ 2 តំលៃ $99 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]'.</msg>
+<status status="PASS" starttime="20231028 01:08:47.917" endtime="20231028 01:08:48.605"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:18.987" endtime="20231027 17:29:21.063"/>
+<status status="PASS" starttime="20231028 01:08:47.914" endtime="20231028 01:08:48.605"/>
 </kw>
 <kw name="check">
 <arg>(//input[@value='ទិញ 3 តំលៃ $129 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${check}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:21.063" level="INFO">Clicking element '(//input[@value='ទិញ 3 តំលៃ $129 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]'.</msg>
-<status status="PASS" starttime="20231027 17:29:21.063" endtime="20231027 17:29:23.151"/>
+<msg timestamp="20231028 01:08:48.605" level="INFO">Clicking element '(//input[@value='ទិញ 3 តំលៃ $129 + ដឹកជញ្ជូនឥតគិតថ្លៃ'])[1]'.</msg>
+<status status="PASS" starttime="20231028 01:08:48.605" endtime="20231028 01:08:49.505"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:21.063" endtime="20231027 17:29:23.151"/>
+<status status="PASS" starttime="20231028 01:08:48.605" endtime="20231028 01:08:49.505"/>
 </kw>
 <kw name="submit">
 <arg>(//p[@class='ladi-headline'][contains(text(),'ទិញ​ឥឡូវនេះ')])[2]</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231027 17:29:23.152" level="INFO">Clicking element '(//p[@class='ladi-headline'][contains(text(),'ទិញ​ឥឡូវនេះ')])[2]'.</msg>
-<status status="PASS" starttime="20231027 17:29:23.152" endtime="20231027 17:29:25.263"/>
+<msg timestamp="20231028 01:08:49.506" level="INFO">Clicking element '(//p[@class='ladi-headline'][contains(text(),'ទិញ​ឥឡូវនេះ')])[2]'.</msg>
+<status status="PASS" starttime="20231028 01:08:49.506" endtime="20231028 01:08:50.323"/>
 </kw>
-<status status="PASS" starttime="20231027 17:29:23.151" endtime="20231027 17:29:25.263"/>
+<status status="PASS" starttime="20231028 01:08:49.506" endtime="20231028 01:08:50.323"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//h3[contains(text(),'Thank you')])[1]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231027 17:29:25.263" endtime="20231027 17:29:29.279"/>
+<msg timestamp="20231028 01:08:56.188" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231028 01:08:56.188" level="FAIL">Element '(//h3[contains(text(),'Thank you')])[1]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20231028 01:08:50.323" endtime="20231028 01:08:56.201"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1sec</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231027 17:29:30.280" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231027 17:29:29.279" endtime="20231027 17:29:30.280"/>
+<status status="NOT RUN" starttime="20231028 01:08:56.202" endtime="20231028 01:08:56.204"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231027 17:29:30.280" level="INFO">Opening url 'https://www.rolexoffice.asia/rolex-datejust-yellow-gold-diamonds?fbclid=IwAR1BuIXDKEf24Z7_ZPyX-ol4g2rRBUrf88QsNCfP687wiAdf628qoIF_l0U&amp;utm_campaign=po8%20-%20rolex%20yellow%20gold%20-%201%20-%20cam'</msg>
-<msg timestamp="20231027 17:29:30.284" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=118.0.5993.118)
-Stacktrace:
-	GetHandleVerifier [0x00007FF67ED77862+54818]
-	(No symbol) [0x00007FF67ECE6A92]
-	(No symbol) [0x00007FF67EB9DA3B]
-	(No symbol) [0x00007FF67EB7DEE8]
-	(No symbol) [0x00007FF67EC03237]
-	(No symbol) [0x00007FF67EC16C6F]
-	(No symbol) [0x00007FF67EBFE883]
-	(No symbol) [0x00007FF67EBD3691]
-	(No symbol) [0x00007FF67EBD48D4]
-	GetHandleVerifier [0x00007FF67F0DB962+3610402]
-	GetHandleVerifier [0x00007FF67F131830+3962352]
-	GetHandleVerifier [0x00007FF67F129D1F+3930847]
-	GetHandleVerifier [0x00007FF67EE13616+693206]
-	(No symbol) [0x00007FF67ECF15F8]
-	(No symbol) [0x00007FF67ECED904]
-	(No symbol) [0x00007FF67ECEDA32]
-	(No symbol) [0x00007FF67ECDE0E3]
-	BaseThreadInitThunk [0x00007FFA39377344+20]
-	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
-</msg>
-<msg timestamp="20231027 17:29:30.284" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=118.0.5993.118)
-Stacktrace:
-	GetHandleVerifier [0x00007FF67ED77862+54818]
-	(No symbol) [0x00007FF67ECE6A92]
-	(No symbol) [0x00007FF67EB9DA3B]
-	(No symbol) [0x00007FF67EB7DEE8]
-	(No symbol) [0x00007FF67EC03237]
-	(No symbol) [0x00007FF67EC16C6F]
-	(No symbol) [0x00007FF67EBFE883]
-	(No symbol) [0x00007FF67EBD3691]
-	(No symbol) [0x00007FF67EBD48D4]
-	GetHandleVerifier [0x00007FF67F0DB962+3610402]
-	GetHandleVerifier [0x00007FF67F131830+3962352]
-	GetHandleVerifier [0x00007FF67F129D1F+3930847]
-	GetHandleVerifier [0x00007FF67EE13616+693206]
-	(No symbol) [0x00007FF67ECF15F8]
-	(No symbol) [0x00007FF67ECED904]
-	(No symbol) [0x00007FF67ECEDA32]
-	(No symbol) [0x00007FF67ECDE0E3]
-	BaseThreadInitThunk [0x00007FFA39377344+20]
-	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
-</msg>
-<status status="FAIL" starttime="20231027 17:29:30.280" endtime="20231027 17:29:30.284"/>
+<status status="NOT RUN" starttime="20231028 01:08:56.204" endtime="20231028 01:08:56.204"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1sec</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231027 17:29:30.284" endtime="20231027 17:29:30.284"/>
+<status status="NOT RUN" starttime="20231028 01:08:56.204" endtime="20231028 01:08:56.204"/>
 </kw>
-<status status="FAIL" starttime="20231027 17:28:59.982" endtime="20231027 17:29:30.284"/>
+<status status="FAIL" starttime="20231028 01:08:39.801" endtime="20231028 01:08:56.204"/>
 </iter>
-<status status="FAIL" starttime="20231027 17:28:59.982" endtime="20231027 17:29:30.284"/>
+<status status="FAIL" starttime="20231028 01:08:39.801" endtime="20231028 01:08:56.209"/>
 </while>
-<status status="FAIL" starttime="20231027 17:28:52.448" endtime="20231027 17:29:30.284">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=118.0.5993.118)
-Stacktrace:
-	GetHandleVerifier [0x00007FF67ED77862+54818]
-	(No symbol) [0x00007FF67ECE6A92]
-	(No symbol) [0x00007FF67EB9DA3B]
-	(No symbol) [0x00007FF67EB7DEE8]
-	(No symbol) [0x00007FF67EC03237]
-	(No symbol) [0x00007FF67EC16C6F]
-	(No symbol) [0x00007FF67EBFE883]
-	(No symbol) [0x00007FF67EBD3691]
-	(No symbol) [0x00007FF67EBD48D4]
-	GetHandleVerifier [0x00007FF67F0DB962+3610402]
-	GetHandleVerifier [0x00007FF67F131830+3962352]
-	GetHandleVerifier [0x00007FF67F129D1F+3930847]
-	GetHandleVerifier [0x00007FF67EE13616+693206]
-	(No symbol) [0x00007FF67ECF15F8]
-	(No symbol) [0x00007FF67ECED904]
-	(No symbol) [0x00007FF67ECEDA32]
-	(No symbol) [0x00007FF67ECDE0E3]
-	BaseThreadInitThunk [0x00007FFA39377344+20]
-	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
-</status>
+<status status="FAIL" starttime="20231028 01:08:25.092" endtime="20231028 01:08:56.209">Element '(//h3[contains(text(),'Thank you')])[1]' not visible after 5 seconds.</status>
 </test>
 <doc>Phone Charger</doc>
-<status status="FAIL" starttime="20231027 17:28:51.760" endtime="20231027 17:29:30.284"/>
+<status status="FAIL" starttime="20231028 01:08:23.775" endtime="20231028 01:08:56.215"/>
 </suite>
-<status status="FAIL" starttime="20231027 17:28:51.745" endtime="20231027 17:29:30.284"/>
+<status status="FAIL" starttime="20231028 01:08:23.755" endtime="20231028 01:08:56.218"/>
 </suite>
 <statistics>
 <total>
@@ -266,35 +194,10 @@ Stacktrace:
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Rolex">Tasks.Rolex</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Rolex">Rolex</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Rolex copy">Rolex.Rolex copy</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231027 17:28:53.532" level="WARN">The chromedriver version (117.0.5938.62) detected in PATH at C:\Users\AW-Tester\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.118); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg timestamp="20231027 17:29:30.284" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=118.0.5993.118)
-Stacktrace:
-	GetHandleVerifier [0x00007FF67ED77862+54818]
-	(No symbol) [0x00007FF67ECE6A92]
-	(No symbol) [0x00007FF67EB9DA3B]
-	(No symbol) [0x00007FF67EB7DEE8]
-	(No symbol) [0x00007FF67EC03237]
-	(No symbol) [0x00007FF67EC16C6F]
-	(No symbol) [0x00007FF67EBFE883]
-	(No symbol) [0x00007FF67EBD3691]
-	(No symbol) [0x00007FF67EBD48D4]
-	GetHandleVerifier [0x00007FF67F0DB962+3610402]
-	GetHandleVerifier [0x00007FF67F131830+3962352]
-	GetHandleVerifier [0x00007FF67F129D1F+3930847]
-	GetHandleVerifier [0x00007FF67EE13616+693206]
-	(No symbol) [0x00007FF67ECF15F8]
-	(No symbol) [0x00007FF67ECED904]
-	(No symbol) [0x00007FF67ECEDA32]
-	(No symbol) [0x00007FF67ECDE0E3]
-	BaseThreadInitThunk [0x00007FFA39377344+20]
-	RtlUserThreadStart [0x00007FFA3A9C26B1+33]
-</msg>
 </errors>
 </robot>
